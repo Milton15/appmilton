@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>App Milton-Test</title>
+        <meta name="description" content="Mi primera PWA">
+      
+        <meta name="theme-color" content="#333">
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="shortcut icon" type="image/png" href="./imagenes/iron-man-1024.png">
+        <link rel="apple-touch-icon" href="./imagenes/iron-man-1024.png">
+        <link rel="apple-touch-startup-image" href="./imagenes/iron-man-1024.png">
+        <link rel="manifest" href="./manifest.json">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <style>
+        .google-maps {
+            position: relative;
+            padding-bottom: 100%;
+            height: 0%;
+            overflow: hidden;
+        }
+        .google-maps iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
+        
+    </style>
+
+  <script src="./navbar.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse sidebarNavigation" data-sidebarClass="navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle left-navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="./index.html">Milton Site</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="./index.html">Home</a></li>
+        <li><a href="./inputs.html">Inputs</a></li>
+        <li><a href="https://colorlib.com/preview/#unapp" target="_blank">colorlib</a></li>
+        <li><a href="./location.html">Location</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="google-maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7098.94326104394!2d78.0430654485247!3d27.172909818538997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1385710909804" width="600" height="450" frameborder="0" style="border:0"></iframe>
+</div>
+<!--<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15138.114902835614!2d-69.94907835!3d18.45969485!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sdo!4v1556572027773!5m2!1ses!2sdo" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>App Milton-Test</title>
+        <meta name="description" content="Mi primera PWA">
+      
+        <meta name="theme-color" content="#333">
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="shortcut icon" type="image/png" href="./imagenes/iron-man-1024.png">
+        <link rel="apple-touch-icon" href="./imagenes/iron-man-1024.png">
+        <link rel="apple-touch-startup-image" href="./imagenes/iron-man-1024.png">
+        <link rel="manifest" href="./manifest.json">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="./navbar.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse sidebarNavigation" data-sidebarClass="navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle left-navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="./index.html">Milton Site</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="./index.html">Home</a></li>
+        <li><a href="./inputs.html">Inputs</a></li>
+        <li><a href="https://colorlib.com/preview/#unapp" target="_blank">colorlib</a></li>
+        <li><a href="./location.html">Location</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container text-center">
+  <h3>Thanos</h3>
+  <img src="./imagenes/thanos.jpg" alt="Thanos" class="img-responsive">
+  <br>
+  <input id="btn-clickme" type="button" class="btn btn-success input-lg" value="CLICK ME" >
+</div>
+<br>
+<div class="container">
+    <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" width="853" height="480" src="https://www.youtube.com/embed/IwzUs1IMdyQ" frameborder="0" allowfullscreen></iframe>
+
+</div>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('#btn-clickme').click(function(){
+        swal({
+  title: "Bien Hecho!",
+  text: "Con el Guantelete!",
+  icon: "success",
+  button: "OK",
+});
+    })
+});
+</script>
+</body>
+</html>
