@@ -63,7 +63,7 @@
                 </div>
                 <div class="form-group">
                         <label for="exampleInputPassword1">Number</label>
-                        <input id="number" type="number" class="form-control" id="exampleInputPassword1" placeholder="Number">
+                        <input id="number" type="number" class="form-control" id="exampleInputPassword1" autofocus placeholder="Number">
                       </div>
                       <div class="form-group">
                             <label for="exampleInputPassword1">date</label>
@@ -85,8 +85,7 @@
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
 $(document).ready(function(){
-        $('#number').numeric();
-
+        
     $('#btn-clickme').click(function(){
         swal({
   title: "Bien Hecho!",
